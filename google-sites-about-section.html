@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background-color: transparent; }
+        .arabic { font-family: 'Noto Sans Arabic', sans-serif; direction: rtl; }
+        .glass-effect { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-transparent">
+    <section class="max-w-6xl mx-auto px-4 py-12">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Visuele Kolom -->
+            <div class="relative">
+                <!-- Decoratieve cirkel -->
+                <div class="absolute -top-6 -left-6 w-32 h-32 bg-blue-100 rounded-full opacity-50 blur-2xl"></div>
+                
+                <!-- Hoofdafbeelding (Placeholder die er goed uitziet) -->
+                <div class="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white aspect-square bg-slate-200">
+                    <img src="https://images.unsplash.com/photo-1629909613654-284990c0bc16?auto=format&fit=crop&q=80&w=800" 
+                         alt="Cabinet Dentaire Lumière" 
+                         class="w-full h-full object-cover">
+                </div>
+
+                <!-- Zwevende Stats Badge -->
+                <div class="absolute -bottom-6 -right-6 glass-effect p-6 rounded-2xl shadow-xl border border-blue-50 animate-float">
+                    <div class="flex items-center gap-4">
+                        <div class="text-center">
+                            <p class="text-2xl font-bold text-blue-600">10+</p>
+                            <p class="text-[9px] uppercase tracking-widest text-slate-500 font-bold">Années</p>
+                        </div>
+                        <div class="w-px h-8 bg-slate-200"></div>
+                        <div class="text-center">
+                            <p class="text-2xl font-bold text-blue-600">5k+</p>
+                            <p class="text-[9px] uppercase tracking-widest text-slate-500 font-bold">Sourires</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tekst Kolom -->
+            <div class="space-y-6">
+                <div class="space-y-2">
+                    <span class="text-blue-600 font-bold text-xs uppercase tracking-[0.2em]">À Propos de Nous</span>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 leading-tight">
+                        L'excellence dentaire au cœur de <span class="text-blue-500">Rabat-Agdal</span>.
+                    </h2>
+                </div>
+
+                <div class="space-y-4 text-slate-600 leading-relaxed">
+                    <p class="text-base">
+                        Le **Cabinet Dentaire Lumière** est bien plus qu'une clinique ; c'est un espace dédié à votre confort et à la santé de votre sourire. Nous utilisons les technologies les plus avancées pour des soins sans douleur.
+                    </p>
+                    
+                    <div class="arabic bg-blue-50 p-5 rounded-2xl border-r-4 border-blue-500">
+                        <p class="text-lg text-blue-900 font-semibold leading-relaxed">
+                            نحن نلتزم بتقديم أفضل خدمات طب الأسنان في أكدال، مع التركيز على راحتكم وأحدث التقنيات لضمان ابتسامة مشرقة وصحية.
+                        </p>
+                    </div>
+
+                    <ul class="grid grid-cols-2 gap-3 pt-2">
+                        <li class="flex items-center gap-2 text-sm font-medium text-slate-700">
+                            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            Expertise 10+ ans
+                        </li>
+                        <li class="flex items-center gap-2 text-sm font-medium text-slate-700">
+                            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            Technologie 3D
+                        </li>
+                        <li class="flex items-center gap-2 text-sm font-medium text-slate-700">
+                            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            Hygiène stricte
+                        </li>
+                        <li class="flex items-center gap-2 text-sm font-medium text-slate-700">
+                            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            Équipe Bienveillante
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pt-4">
+                    <a href="https://wa.me/212600000000" target="_blank" 
+                       class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-blue-700 transition-all transform hover:-translate-y-1">
+                        Prendre rendez-vous
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

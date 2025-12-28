@@ -1,0 +1,7 @@
+{
+  "name": "Cabinet Dentaire Lumière - Rabat Agdal",
+  "description": "Een moderne tandartspraktijk website met directe WhatsApp integratie en AI-assistent.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
